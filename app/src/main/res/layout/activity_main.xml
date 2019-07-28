@@ -1,0 +1,109 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity"
+
+
+    android:background="@drawable/background"
+    >
+
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:id="@+id/open"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_weight="0"
+        tools:layout_editor_absoluteX="16dp"
+        tools:layout_editor_absoluteY="125dp">
+
+        <Button
+            android:id="@+id/startButton"
+            android:layout_width="112dp"
+            android:layout_height="60dp"
+
+
+            android:layout_marginStart="8dp"
+            android:layout_marginLeft="8dp"
+            android:layout_marginTop="168dp"
+            android:layout_marginEnd="148dp"
+            android:layout_marginRight="148dp"
+            android:background="@color/colorAccent"
+            android:onClick="takePicture"
+            android:text="Start Now"
+            android:textAppearance="@style/TextAppearance.AppCompat.Body2"
+            android:textSize="18sp"
+            android:typeface="monospace"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.909"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/textView"
+            tools:includeFontPadding="false" />
+
+        <TextView
+            android:id="@+id/textView"
+            android:layout_width="247dp"
+            android:layout_height="40dp"
+            android:layout_marginStart="8dp"
+            android:layout_marginLeft="8dp"
+            android:layout_marginEnd="8dp"
+            android:layout_marginRight="8dp"
+            android:gravity="center"
+            android:text="Malaria Detector Using AI"
+            android:textColor="@color/cardview_light_background"
+            android:textAppearance="@style/TextAppearance.AppCompat.Body1"
+            android:textSize="15dp"
+            android:typeface="serif"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/textView2"
+            tools:fontFamily="@font/actor" />
+
+        <TextView
+            android:id="@+id/textView2"
+            android:layout_width="300dp"
+            android:layout_height="65dp"
+            android:layout_marginStart="56dp"
+            android:layout_marginLeft="56dp"
+            android:layout_marginTop="160dp"
+            android:layout_marginEnd="55dp"
+            android:layout_marginRight="55dp"
+            android:layout_marginBottom="506dp"
+            android:gravity="center"
+            android:text="Advancers.AI"
+            android:textAppearance="@style/TextAppearance.AppCompat.Body1"
+            android:textColor="@color/cardview_light_background"
+            android:textSize="40dp"
+            android:textStyle="bold"
+            android:typeface="serif"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            tools:fontFamily="@font/aldrich" />
+
+
+        <Button
+            android:id="@+id/button2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="108dp"
+            android:layout_marginLeft="108dp"
+            android:layout_marginEnd="110dp"
+            android:layout_marginRight="110dp"
+            android:layout_marginBottom="112dp"
+            android:background="@color/colorPrimary"
+            android:onClick="CheckPastPatient"
+            android:text="Check Past Patients"
+            android:typeface="monospace"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.529"
+
+
+            app:layout_constraintStart_toStartOf="parent" />
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+</RelativeLayout>
